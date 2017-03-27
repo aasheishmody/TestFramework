@@ -1,37 +1,37 @@
 # TestFramework
 
-Steps to run:
+<b><h1>Steps to run:</h1></b></br>
 
-1)Clone the project. </br>
-2)Navigate to the project through command line. </br>
-3)Execute the command - mvn clean install -P Chrome,Extra\ Large\ View\ Port,Production\ Environment </br>
-4)Check reports - TestFramework/target/cucumber-html-report/feature-overview.html </br>
+1)Clone the project.</br>
+2)Navigate to the project through command line.</br>
+3)Execute the command - <b>mvn clean install -P Chrome,Extra\ Large\ View\ Port,Production\ Environment</b> </br>
+4)Check reports - TestFramework/target/cucumber-html-report/feature-overview.html</br>
 
 
-Features of the framework </br>
+<b><h2>Features of the framework </h2></b></br>
 
-1)Can be run on different browsers using multiple view ports. </br>
+<b>1)Can be run on different browsers using multiple view ports. </b></br>
  
  Example to run on Firefox in Medium View Port Landscape mode - </br>
  
- mvn clean install -P Firefox,Medium\ View\ Port\ Landscape,Production\ Environment </br>
+ <b>mvn clean install -P Firefox,Medium\ View\ Port\ Landscape,Production\ Environment</b></br>
  
-2)Tests run parallely (count can be increased) through multiple runners and the json files </br> 
-from different runners are merged at the end to produce a consolidated HTML report. </br>
+<b>2)Tests run parallely (count can be increased) through multiple runners and the json files</b></br> 
+<b>from different runners are merged at the end to produce a consolidated HTML report.</b></br>
 
-3)Can be run on different environments. </br>
+<b>3)Can be run on different environments.</b></br>
 
   Example to run on QA Environment - </br>
   
-  mvn clean install -P Chrome,Extra\ Large\ View\ Port,QA\ Environment </br>
+  <b>mvn clean install -P Chrome,Extra\ Large\ View\ Port,QA\ Environment</b></br>
   
-4)Can run on different Operating Systems (Currently Windows and Mac - more can be added). </br>
+<b>4)Can run on different Operating Systems (Currently Windows and Mac - more can be added).</b></br>
 
-5)Takes screenshot of failing scenarios and embeds it in the test report. </br>
+<b>5)Takes screenshot of failing scenarios and embeds it in the test report.</b></br>
 
 
 
-Things to note </br>
+<b><h2>Things to note</h2></b></br>
 
 1)All the timeouts are dynamic in nature with regular polling. </br>
 
