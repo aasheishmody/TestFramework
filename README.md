@@ -2,10 +2,10 @@
 
 Steps to run:
 
-1)Clone the project
-2)Navigate to the project through command line
-3)Execute the command - mvn clean install -P Chrome,Extra\ Large\ View\ Port,Production\ Environment
-4)Check reports - TestFramework/target/cucumber-html-report/feature-overview.html
+1)Clone the project </br>
+2)Navigate to the project through command line </br>
+3)Execute the command - mvn clean install -P Chrome,Extra\ Large\ View\ Port,Production\ Environment </br>
+4)Check reports - TestFramework/target/cucumber-html-report/feature-overview.html </br>
 
 
 Features of the framework
