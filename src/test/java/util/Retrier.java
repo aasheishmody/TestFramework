@@ -7,7 +7,6 @@ import java.util.function.*;
 import java.util.logging.Logger;
 
 public class Retrier {
-    public static long defaultSleepTimeInMillis = 20l;
     private static Logger logger = Logger.getLogger(ClassName.class.getName());
 
     private Retrier() {
@@ -15,14 +14,6 @@ public class Retrier {
 
     public static void retry(String name, Runnable function, int numberOfTimes, long sleepTimeInMillis) {
         retryRec(name, function, Optional.empty(), 0, numberOfTimes, sleepTimeInMillis);
-    }
-
-    public static void retry(String name, Runnable function, int numberOfTimes) {
-        retryRec(name, function, Optional.empty(), 0, numberOfTimes, defaultSleepTimeInMillis);
-    }
-
-    public static void retry(String name, Runnable function, BooleanSupplier until, int numberOfTimes, long sleepTimeInMillis) {
-        retryRec(name, function, Optional.of(until), 0, numberOfTimes, sleepTimeInMillis);
     }
 
     private static void retryRec(String name, Runnable function, Optional<BooleanSupplier> until, int current, int total, long sleepTimeInMillis) {
