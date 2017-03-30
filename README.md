@@ -35,17 +35,14 @@
 
 1)All the timeouts are dynamic in nature with regular polling. </br>
 
-2)Binaries have been included for demonstration purposes. Jenkins job can easily be customised </br> 
-in order to avoid inclusion of binaries in the repository. </br>
-
-3)Additional feature file (Search Demo For Parallel Run) has been created with the same scenarios </br>
+2)Additional feature file (Search Demo For Parallel Run) has been created with the same scenarios </br>
 just to demonstrate parallel run. </br>
 
-4)Chrome and Firefox need to be updated to the latest version. </br>
+3)Chrome and Firefox need to be updated to the latest version. </br>
 
-5)Operating System should have maven and java installed. </br>
+4)Operating System should have maven and java installed. </br>
 
-6)Parallel run for multiple browsers for different view ports and environments can be easily  
+5)Parallel run for multiple browsers for different view ports and environments can be easily  
 achieved through Jenkins
 
 For example - Multiple instances of firefox can run parallely with multiple instances of chrome
