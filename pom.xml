@@ -125,6 +125,12 @@
             <artifactId>guava</artifactId>
             <version>21.0</version>
         </dependency>
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>1.6.1</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <profiles>
@@ -185,19 +191,19 @@
         <profile>
             <id>Stage Environment</id>
             <properties>
-                <environment>https://www.etsy-stg.com/uk</environment>
+                <environment>https://www.etsy-stg.com</environment>
             </properties>
         </profile>
         <profile>
             <id>QA Environment</id>
             <properties>
-                <environment>https://www.etsy-qa.com/uk</environment>
+                <environment>https://www.etsy-qa.com</environment>
             </properties>
         </profile>
         <profile>
             <id>Production Environment</id>
             <properties>
-                <environment>https://www.etsy.com/uk</environment>
+                <environment>https://www.etsy.com</environment>
             </properties>
         </profile>
     </profiles>

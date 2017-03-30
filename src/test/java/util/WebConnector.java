@@ -1,5 +1,7 @@
 package util;
 
+import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.FirefoxDriverManager;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -167,25 +169,19 @@ public class WebConnector {
             case "chrome":
                 getLogger().info("Opening Chrome");
                 if (getDriver() == null) {
-                    if (getOperatingSystem().contains("Mac"))
-                        System.setProperty("webdriver.chrome.driver", (System.getProperty("user.dir") + "/macChromeDriver"));
-                    else
-                        System.setProperty("webdriver.chrome.driver", (System.getProperty("user.dir") + "/windowsChromeDriver.exe"));
+                    ChromeDriverManager.getInstance().setup();
                     setDriver(new ChromeDriver());
                 }
                 break;
             case "firefox":
                 if (getDriver() == null) {
-                    if (getOperatingSystem().contains("Mac"))
-                    System.setProperty("webdriver.gecko.driver", (System.getProperty("user.dir") + "/macFirefoxDriver"));
-                    else
-                        System.setProperty("webdriver.gecko.driver", (System.getProperty("user.dir") + "/windowsFirefoxDriver.exe"));
-                setDriver(new FirefoxDriver());
+                    FirefoxDriverManager.getInstance().setup();
+                    setDriver(new FirefoxDriver());
                 }
                 break;
             case "safari":
                 if (driver == null) {
-                setDriver(new SafariDriver());
+                    setDriver(new SafariDriver());
                 }
                 break;
         }

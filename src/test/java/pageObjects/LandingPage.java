@@ -7,7 +7,7 @@ public class LandingPage extends Page {
 
     @FindBy(id = "search-query")
     private WebElement SearchInputBox;
-    @FindBy(css = ".btn.btn-primary")
+    @FindBy(css = ".btn.btn-orange.btn-append")
     private WebElement SearchButton;
     @FindBy(id = "catnav-primary-link-1179-link")
     private WebElement ItemCategoryHeaderForJewellery;
